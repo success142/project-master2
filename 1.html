@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project work</title>
+</head>
+<body>
+    
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+          <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+          <script type="text/javascript">
+              window.tailwind.config = {
+                  darkMode: ['class'],
+                  theme: {
+                      extend: {
+                          colors: {
+                              border: 'hsl(var(--border))',
+                              input: 'hsl(var(--input))',
+                              ring: 'hsl(var(--ring))',
+                              background: 'hsl(var(--background))',
+                              foreground: 'hsl(var(--foreground))',
+                              primary: {
+                                  DEFAULT: 'hsl(var(--primary))',
+                                  foreground: 'hsl(var(--primary-foreground))'
+                              },
+                              secondary: {
+                                  DEFAULT: 'hsl(var(--secondary))',
+                                  foreground: 'hsl(var(--secondary-foreground))'
+                              },
+                              destructive: {
+                                  DEFAULT: 'hsl(var(--destructive))',
+                                  foreground: 'hsl(var(--destructive-foreground))'
+                              },
+                              muted: {
+                                  DEFAULT: 'hsl(var(--muted))',
+                                  foreground: 'hsl(var(--muted-foreground))'
+                              },
+                              accent: {
+                                  DEFAULT: 'hsl(var(--accent))',
+                                  foreground: 'hsl(var(--accent-foreground))'
+                              },
+                              popover: {
+                                  DEFAULT: 'hsl(var(--popover))',
+                                  foreground: 'hsl(var(--popover-foreground))'
+                              },
+                              card: {
+                                  DEFAULT: 'hsl(var(--card))',
+                                  foreground: 'hsl(var(--card-foreground))'
+                              },
+                          },
+                      }
+                  }
+              }
+          </script>
+          <style type="text/tailwindcss">
+              @layer base {
+                  :root {
+                      --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 240 5.9% 10%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 240 5.9% 10%;
+  --radius: 0.5rem;
+                  }
+                  .dark {
+                      --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 240 5.9% 10%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+                  }
+              }
+          </style>
+    </head>
+    <body>
+      <div class="flex flex-col min-h-screen">
+      
+      <header class="bg-white shadow-md">
+          <div class="container mx-auto flex items-center justify-between py-4 px-8">
+              
+              <div class="text-2xl font-bold text-blue-500" style="height: 120px; width: 100px;"><img src="success-digital-agency-high-resolution-logo-transparent.png" alt=""></div>
+              
+              <nav class="hidden md:flex space-x-6">
+                  <a href="#" class="text-zinc-600 hover:text-blue-500">Project Topics</a>
+                  <a href="#" class="text-zinc-600 hover:text-blue-500">Departments</a>
+                  <a href="#" class="text-zinc-600 hover:text-blue-500">Hire a Writer</a>
+                  <a href="#" class="text-zinc-600 hover:text-blue-500">Payments</a>
+                  <a href="#" class="text-zinc-600 hover:text-blue-500">Downloads</a>
+                  <a href="#" class="text-zinc-600 hover:text-blue-500">Campus Rep</a>
+                  <a href="#" class="text-zinc-600 hover:text-blue-500">Blog</a>
+              </nav>
+              
+              <!-- <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">Login</button> -->
+              <a href="https://wa.me/+2348125984365"> <svg xmlns="http://www.w3.org/2000/svg" width="46" height="36" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+              </svg></a>
+            </div>
+      </header>
+      
+      <div class="container mx-auto py-8">
+          <h1 class="text-3xl font-bold text-blue-500 mb-4">Final Year Research Project Topics - Download Projects And Research Materials Instantly.</h1>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+              
+              <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg block text-center">Assignments</a>
+              <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg block text-center">Business Plans</a>
+              <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg block text-center">e-Books</a>
+              <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg block text-center">Journals</a>
+              <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg block text-center">Project Materials</a>
+              <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg block text-center">Proposals</a>
+              <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg block text-center">Seminar Reports</a>
+              <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-lg block text-center">Term Papers</a>
+          </div>
+          
+          <input type="text" placeholder="Type here to search" class="mt-8 px-4 py-2 border border-zinc-300 rounded-lg w-full md:w-1/2">
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 bg-gray-100">
+        <a href="accounting/accounting.html" class="department-card">
+          <div class="icon bg-blue-500 text-white p-2 rounded-full">
+            <!-- Add an appropriate icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <span class="text-lg font-semibold">ACCOUNTING</span>
+        </a>
+      
+        <a href="AFRICAN LANGUAGES AND LINGUISTICS STUDIES/AFRICAN LANGUAGES AND LINGUISTICS STUDIES.html" class="department-card">
+          <div class="icon bg-green-500 text-white p-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12h3m4 0a9 9 0 11-18 0 9 9 0 0118 0zM7 12h3m-2 8h.01M4 16h.01M4 8h.01M12 4h.01m8 4h.01M16 16h.01M12 20h.01" />
+            </svg>
+          </div>
+          <span class="text-lg font-semibold">AFRICAN LANGUAGES</span>
+        </a>
+      
+        <a href="AGRICULTURAL ECONOMICS AND EXTENSION/AGRICULTURAL ECONOMICS AND EXTENSION.html" class="department-card">
+          <div class="icon bg-yellow-500 text-white p-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11M9 21V3m-6 6h6a2 2 0 100-4h-6a2 2 0 000 4zm6 0h6a2 2 0 100-4h-6a2 2 0 000 4zm6 0v8m4 0h6a2 2 0 100-4h-6a2 2 0 000 4z" />
+            </svg>
+          </div>
+          <span class="text-lg font-semibold">AGRICULTURAL ECONOMICS</span>
+        </a>
+      
+        <a href="AGRICULTURE/AGICULTURE.HTML" class="department-card">
+          <div class="icon bg-red-500 text-white p-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11M9 21V3m-6 6h6a2 2 0 100-4h-6a2 2 0 000 4zm6 0h6a2 2 0 100-4h-6a2 2 0 000 4zm6 0v8m4 0h6a2 2 0 100-4h-6a2 2 0 000 4z" />
+            </svg>
+          </div>
+          <span class="text-lg font-semibold">AGRICULTURE</span>
+        </a>
+      
+        <a href="#" class="department-card">
+          <div class="icon bg-teal-500 text-white p-2 rounded-full">
+            <!-- Replace with more specific icons for each -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 2a8.003 8.003 0 01-4.804 7.478L12 21l-1.196-1.522A8.003 8.003 0 0112 4a8.003 8.003 0 018 8v2a8.003 8.003 0 01-4.804 7.478l-3.796 1.522" />
+            </svg>
+          </div>
+          <span class="text-lg font-semibold">LAW</span>
+        </a>
+      
+        <a href="#" class="department-card">
+          <div class="icon bg-pink-500 text-white p-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v1a3 3 0 003 3h0a3 3 0 003-3v-1m0-3h-6v6h6v-6z" />
+            </svg>
+          </div>
+          <span class="text-lg font-semibold">HISTORY</span>
+        </a>
+        <a href="#" class="department-card">
+            <div class="icon bg-indigo-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v1a3 3 0 003 3h0a3 3 0 003-3v-1m0-3h-6v6h6v-6z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">HOME ECONOMICS</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-purple-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c0-2-1.5-4-4-4s-4 2-4 4 2 4 4 4 4-2 4-4zM22 8c0-2-1.5-4-4-4s-4 2-4 4 2 4 4 4 4-2 4-4zM22 8c0-2-1.5-4-4-4s-4 2-4 4 2 4 4 4 4-2 4-4zM12 8c0-2-1.5-4-4-4s-4 2-4 4 2 4 4 4 4-2 4-4z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">HUMAN RESOURCE MANAGEMENT</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-pink-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h-1v-4h-1v4H9v-4H8v4H7v-6h6m0 0l4-4m-4 4l4-4" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">INDUSTRIAL CHEMISTRY</span>
+          </a>
+          
+          <!-- Continue this for each department in the list -->
+          <a href="#" class="department-card">
+            <div class="icon bg-orange-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11M9 21V3m-6 6h6a2 2 0 100-4h-6a2 2 0 000 4z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">INDUSTRIAL RELATIONS & PERSONNEL MANAGEMENT</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-green-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v1a3 3 0 003 3h0a3 3 0 003-3v-1m0-3h-6v6h6v-6z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">INSURANCE</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-blue-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c0-2-1.5-4-4-4s-4 2-4 4 2 4 4 4 4-2 4-4z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">INTERNATIONAL RELATIONS</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-purple-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c0-2-1.5-4-4-4s-4 2-4 4 2 4 4 4 4-2 4-4z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">LAW</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-teal-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 2a8.003 8.003 0 01-4.804 7.478L12 21l-1.196-1.522A8.003 8.003 0 0112 4a8.003 8.003 0 018 8v2a8.003 8.003 0 01-4.804 7.478l-3.796 1.522" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">LIBRARY SCIENCE</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-pink-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h-1v-4h-1v4H9v-4H8v4H7v-6h6m0 0l4-4m-4 4l4-4" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">LINGUISTICS</span>
+          </a>
+          
+          <!-- Continue for all remaining departments until ZOOLOGY -->
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-yellow-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c0-2-1.5-4-4-4s-4 2-4 4 2 4 4 4 4-2 4-4z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">ZOOLOGY</span>
+          </a>
+          <a href="#" class="department-card">
+            <div class="icon bg-indigo-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c0-2-1.5-4-4-4s-4 2-4 4 2 4 4 4 4-2 4-4z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">MANUFACTURING</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-red-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V5l5-3m-5 14l-5-3m10 3H6" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">MARITIME AND TRANSPORT</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-teal-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3m0 10v8m-4-6h8m-8 0l3-3m5 3l-3 3" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">MARKETING</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-yellow-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c0-2-1.5-4-4-4s-4 2-4 4 2 4 4 4 4-2 4-4z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">MASS COMMUNICATION</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-green-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v1a3 3 0 003 3h0a3 3 0 003-3v-1m0-3h-6v6h6v-6z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">MATHEMATICS & STATISTICS</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-blue-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10V3m0 10v8m-4-6h8m-8 0l3-3m5 3l-3 3" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">MBA / MSC PROJECTS</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-purple-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V5l5-3m-5 14l-5-3m10 3H6" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">MECHANICAL ENGINEERING</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-pink-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 2a8.003 8.003 0 01-4.804 7.478L12 21l-1.196-1.522A8.003 8.003 0 0112 4a8.003 8.003 0 018 8v2a8.003 8.003 0 01-4.804 7.478l-3.796 1.522" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">MEDICAL AND HEALTH SCIENCE</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-teal-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3m0 10v8m-4-6h8m-8 0l3-3m5 3l-3 3" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">MICROBIOLOGY</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-yellow-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 2a8.003 8.003 0 01-4.804 7.478L12 21l-1.196-1.522A8.003 8.003 0 0112 4a8.003 8.003 0 018 8v2a8.003 8.003 0 01-4.804 7.478l-3.796 1.522" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">NURSING</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-indigo-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11M9 21V3m-6 6h6a2 2 0 100-4h-6a2 2 0 000 4z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">OFFICE TECHNOLOGY MANAGEMENT</span>
+          </a>
+          
+          <!-- Repeat structure for other departments as necessary -->
+          <a href="#" class="department-card">
+            <div class="icon bg-red-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v1a3 3 0 003 3h0a3 3 0 003-3v-1m0-3h-6v6h6v-6z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">OTHERS</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-teal-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3m0 10v8m-4-6h8m-8 0l3-3m5 3l-3 3" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">PARASITOLOGY AND ENTOMOLOGY</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-yellow-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 2a8.003 8.003 0 01-4.804 7.478L12 21l-1.196-1.522A8.003 8.003 0 0112 4a8.003 8.003 0 018 8v2a8.003 8.003 0 01-4.804 7.478l-3.796 1.522" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">PETROLEUM ENGINEERING</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-blue-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V5l5-3m-5 14l-5-3m10 3H6" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">PHARMACEUTICAL SCIENCES</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-indigo-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v1a3 3 0 003 3h0a3 3 0 003-3v-1m0-3h-6v6h6v-6z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">PHILOSOPHY</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-pink-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 2a8.003 8.003 0 01-4.804 7.478L12 21l-1.196-1.522A8.003 8.003 0 0112 4a8.003 8.003 0 018 8v2a8.003 8.003 0 01-4.804 7.478l-3.796 1.522" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">PHYSICS</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-teal-700 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 16V5m-2 4h6" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">PHYSIOLOGY</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-orange-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3m0 10v8m-4-6h8m-8 0l3-3m5 3l-3 3" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">PLANT SCIENCE</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-green-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v1a3 3 0 003 3h0a3 3 0 003-3v-1m0-3h-6v6h6v-6z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">POLITICAL SCIENCE</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-yellow-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 2a8.003 8.003 0 01-4.804 7.478L12 21l-1.196-1.522A8.003 8.003 0 0112 4a8.003 8.003 0 018 8v2a8.003 8.003 0 01-4.804 7.478l-3.796 1.522" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">PRODUCTION AND OPERATIONS MANAGEMENT</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-indigo-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v1a3 3 0 003 3h0a3 3 0 003-3v-1m0-3h-6v6h6v-6z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">PSYCHOLOGY</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-teal-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3m0 10v8m-4-6h8m-8 0l3-3m5 3l-3 3" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">PUBLIC ADMINISTRATION</span>
+          </a>
+          
+          <!-- More departments can follow here if needed -->
+          <a href="#" class="department-card">
+            <div class="icon bg-blue-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v1a3 3 0 003 3h0a3 3 0 003-3v-1m0-3h-6v6h6v-6z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">PUBLIC HEALTH</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-indigo-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c0-2-1.5-4-4-4s-4 2-4 4 2 4 4 4 4-2 4-4z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">PURCHASING & SUPPLY</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-red-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10V3m0 10v8m-4-6h8m-8 0l3-3m5 3l-3 3" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">QUANTITY SURVEYING</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-yellow-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v1a3 3 0 003 3h0a3 3 0 003-3v-1m0-3h-6v6h6v-6z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">RADIATION MEDICINE</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-green-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V5l5-3m-5 14l-5-3m10 3H6" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">SCIENCE AND ENGINEERING</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-teal-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c0-2-1.5-4-4-4s-4 2-4 4 2 4 4 4 4-2 4-4z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">SCIENCE LAB TECHNOLOGY</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-pink-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3m0 10v8m-4-6h8m-8 0l3-3m5 3l-3 3" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">SECRETARIAL ADMINISTRATION</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-orange-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v1a3 3 0 003 3h0a3 3 0 003-3v-1m0-3h-6v6h6v-6z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">SOCIOLOGY</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-blue-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V5l5-3m-5 14l-5-3m10 3H6" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">SOIL SCIENCE</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-purple-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v1a3 3 0 003 3h0a3 3 0 003-3v-1m0-3h-6v6h6v-6z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">STAFF DEVELOPMENT AND DISTANCE EDUCATION</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-teal-700 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c0-2-1.5-4-4-4s-4 2-4 4 2 4 4 4 4-2 4-4z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">STATISTICS</span>
+          </a>
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-red-500 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3m0 10v8m-4-6h8m-8 0l3-3m5 3l-3 3" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">TAXATION</span>
+          </a>
+
+                                        
+          
+          <a href="#" class="department-card">
+            <div class="icon bg-yellow-600 text-white p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c0-2-1.5-4-4-4s-4 2-4 4 2 4 4 4 4-2 4-4z" />
+              </svg>
+            </div>
+            <span class="text-lg font-semibold">ZOOLOGY</span>
+          </a>
+          
+      </div>
+      
+      <style>
+      .department-card {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 12px;
+          background-color: white;
+          border: 1px solid #e5e7eb; /* Tailwind's gray-300 */
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          transition: transform 0.2s, box-shadow 0.2s;
+        }
+      
+      .department-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+      
+      .icon {
+          min-width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      </style>
+      
+
+
+      <!-- <div style="display: flex;">
+        <div><a href="accounting/accounting.html"> <li>ACCOUNTING</li></a>
+           <a href="AFRICAN LANGUAGES AND LINGUISTICS STUDIES/AFRICAN LANGUAGES AND LINGUISTICS STUDIES.html"> <li>AFRICAN LANGUAGES AND LINGUISTICS STUDIES</li></a>
+           <a href="AGRICULTURAL ECONOMICS AND EXTENSION/AGRICULTURAL ECONOMICS AND EXTENSION.html"> <li>AGRICULTURAL ECONOMICS AND EXTENSION</li> </a>
+            <a href="AGRICULTURE/AGICULTURE.HTML"><li>AGRICULTURE</li> </a>
+            <li>ANIMAL SCIENCE</li>
+            <li>APPLIED SCIENCE</li>
+            <li>ARCHITECTURE</li>
+            <li>ARTS EDUCATION</li>
+            <li>BANKING AND FINANCE</li>
+            <li>BIO-CHEMISTRY</li>
+            <li>BIOLOGY</li>
+            <li>BOTANY</li>
+            <li>BUILDING</li>
+            <li>BUSINESS ADMIN. AND MANAGEMENT</li>
+            <li>BUSINESS PLAN</li>
+            <li>CHEMICAL ENGINEERING</li>
+            <li>CHEMISTRY</li>
+            <li>CIVIL ENGINEERING</li>
+            <li>COMMERCE</li>
+            <li>COMPUTER ENGINEERING</li>
+            <li>COMPUTER SCIENCE</li>
+            <li>CRIMINOLOGY</li>
+            <li>ECONOMICS</li>
+            <li>EDUCATION</li>
+            <li>ELECTRICAL ENGINEERING</li>
+            <li>ENGINEERING</li>
+            <li>ENGLISH LANGUAGE</li>
+            <li>ENTREPRENEURSHIP</li>
+            <li>ENVIRONMENTAL SCIENCE</li>
+            <li>ESTATE MANAGEMENT</li>
+            <li>FINE ART</li></div>
+        <div><li>FISHERY & AQUACULTURE</li>
+            <li>FOOD SCIENCE AND TECHNOLOGY</li>
+            <li>FRENCH</li>
+            <li>GEOGRAPHY</li>
+            <li>GEOLOGY</li>
+            <li>GUIDANCE COUNSELING</li>
+            <li>HISTORY</li>
+            <li>HOME ECONOMICS</li>
+            <li>HUMAN RESOURCE MANAGEMENT</li>
+            <li>INDUSTRIAL CHEMISTRY</li>
+            <li>INDUSTRIAL RELATIONS & PERSONNEL MANAGEMENT</li>
+            <li>INSURANCE</li>
+            <li>INTERNATIONAL RELATIONS</li>
+            <li>LAW</li>
+            <li>LIBRARY SCIENCE</li>
+            <li>LINGUISTICS AND COMMUNICATION</li>
+            <li>MANUFACTURING</li>
+            <li>MARITIME AND TRANSPORT</li>
+            <li>MARKETING</li>
+            <li>MASS COMMUNICATION</li>
+            <li>MATHEMATICS & STATISTICS</li>
+            <li>MBA / MSC PROJECTS</li>
+            <li>MECHANICAL ENGINEERING</li>
+            <li>MEDICAL AND HEALTH SCIENCE</li>
+            <li>MICROBIOLOGY</li>
+            <li>NURSING</li>
+            <li>OFFICE TECHNOLOGY MANAGEMENT</li>
+            <li>OTHERS</li>
+            <li>PARASITOLOGY AND ENTOMOLOGY</li>
+            <li>PETROLEUM ENGINEERING</li></div>
+        <div><li>PHARMACEUTICAL SCIENCES</li>
+            <li>PHILOSOPHY</li>
+            <li>PHYSICS</li>
+            <li>PHYSIOLOGY</li>
+            <li>PLANT SCIENCE</li>
+            <li>POLITICAL SCIENCE</li>
+            <li>PRODUCTION AND OPERATIONS MANAGEMENT</li>
+            <li>PSYCHOLOGY</li>
+            <li>PUBLIC ADMINISTRATION</li>
+            <li>PUBLIC HEALTH</li>
+            <li>PURCHASING & SUPPLY</li>
+            <li>QUANTITY SURVEYING</li>
+            <li>RADIATION MEDICINE</li>
+            <li>SCIENCE AND ENGINEERING</li>
+            <li>SCIENCE LAB TECHNOLOGY</li>
+            <li>SECRETARIAL ADMINISTRATION</li>
+            <li>SOCIOLOGY</li>
+            <li>SOIL SCIENCE</li>
+            <li>STAFF DEVELOPMENT AND DISTANCE EDUCATION</li>
+            <li>STATISTICS</li>
+            <li>TAXATION</li>
+            <li>THEATRE ARTS</li>
+            <li>THEOLOGY</li>
+            <li>THEOLOGY AND BIBLICAL STUDIES</li>
+            <li>TOURISM AND HOSPITALITY</li>
+            <li>TRANSPORT MANAGEMENT</li>
+            <li>URBAN & REGIONAL PLANNING</li>
+            <li>VOCATIONAL EDUCATION</li>
+            <li>ZOOLOGY</li></div>
+
+      </div> -->
+      
+      <footer class="bg-blue-500 text-white py-4" style="margin-top: auto;">
+          <div class="container mx-auto flex justify-between items-center">
+              
+              <p>Contact info here</p>
+              
+              <div class="flex space-x-4">
+                  <a href="#" class="text-white">Social Media</a>
+                  <a href="#" class="text-white">Social Media</a>
+                  <a href="#" class="text-white">Social Media</a>
+              </div>
+              
+              <div class="flex space-x-4">
+                  <a href="#" class="text-white">Terms of Service</a>
+                  <a href="#" class="text-white">Privacy Policy</a>
+              </div>
+          </div>
+      </footer>
+  </div>
+  
+    </body>
+  </html>
+</body>
+</html>

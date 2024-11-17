@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+          <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+          <script type="text/javascript">
+              window.tailwind.config = {
+                  darkMode: ['class'],
+                  theme: {
+                      extend: {
+                          colors: {
+                              border: 'hsl(var(--border))',
+                              input: 'hsl(var(--input))',
+                              ring: 'hsl(var(--ring))',
+                              background: 'hsl(var(--background))',
+                              foreground: 'hsl(var(--foreground))',
+                              primary: {
+                                  DEFAULT: 'hsl(var(--primary))',
+                                  foreground: 'hsl(var(--primary-foreground))'
+                              },
+                              secondary: {
+                                  DEFAULT: 'hsl(var(--secondary))',
+                                  foreground: 'hsl(var(--secondary-foreground))'
+                              },
+                              destructive: {
+                                  DEFAULT: 'hsl(var(--destructive))',
+                                  foreground: 'hsl(var(--destructive-foreground))'
+                              },
+                              muted: {
+                                  DEFAULT: 'hsl(var(--muted))',
+                                  foreground: 'hsl(var(--muted-foreground))'
+                              },
+                              accent: {
+                                  DEFAULT: 'hsl(var(--accent))',
+                                  foreground: 'hsl(var(--accent-foreground))'
+                              },
+                              popover: {
+                                  DEFAULT: 'hsl(var(--popover))',
+                                  foreground: 'hsl(var(--popover-foreground))'
+                              },
+                              card: {
+                                  DEFAULT: 'hsl(var(--card))',
+                                  foreground: 'hsl(var(--card-foreground))'
+                              },
+                          },
+                      }
+                  }
+              }
+          </script>
+          <style type="text/tailwindcss">
+              @layer base {
+                  :root {
+                      --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 240 5.9% 10%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 240 5.9% 10%;
+  --radius: 0.5rem;
+                  }
+                  .dark {
+                      --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 240 5.9% 10%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+                  }
+              }
+          </style>
+    </head>
+    <body>
+      <!DOCTYPE html>
+  <html lang="en">
+  <body class="bg-white dark:bg-zinc-900 text-black dark:text-white">
+      <div class="flex flex-col min-h-screen">
+          
+          
+          <header class="bg-white dark:bg-zinc-800 shadow-md">
+              <div class="container mx-auto flex items-center justify-between py-4 px-8">
+                  <div class="text-2xl font-bold text-blue-500 dark:text-blue-300">Logo</div>
+                  
+                  <nav class="hidden md:flex space-x-6">
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Home</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Projects</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Departments</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Hire a Writer</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Payments</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Downloads</a>
+                      <div class="relative group">
+                          <a href="#" class="text-zinc-600 dark:text-zinc-400 group-hover:text-blue-500 dark:group-hover:text-blue-300">Make Money</a>
+                          <div class="hidden group-hover:block absolute z-10 mt-2 py-2 bg-white dark:bg-zinc-800 shadow-md rounded-lg">
+                              <a href="#" class="block px-4 py-2 text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Get in Touch</a>
+                          </div>
+                      </div>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Campus Rep</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Blog</a>
+                  </nav>
+                  
+                  <button class="bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">Login</button>
+              </div>
+          </header>
+          
+          
+          <div class="container mx-auto py-8">
+              <input type="text" placeholder="What's your project topic?" class="mt-8 px-4 py-2 border border-zinc-300 dark:border-zinc-600 rounded-lg w-full md:w-1/2">
+              <button class="bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg mt-2">Search <img aria-hidden="true" alt="search" src="https://placehold.co/20?text=🔍" class="inline-block w-4 h-4 ml-2"></button>
+          </div>
+          
+          
+          <div class="container mx-auto">
+              <h1 class="text-3xl font-bold text-blue-500 dark:text-blue-300 mb-4">Accounting Project Topics & Research Materials | Final Year Research Project Topics With Free Chapter One</h1>
+              <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <li>
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">1. Assessment of the Impact of International Financial Reporting Standards (IFRS) on Financial Statements</h2>
+                        <p>This study examines the adoption of IFRS and its influence on financial statements, focusing on transparency, comparability, and challenges during implementation.</p>
+                      </a> </li>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">2. The Role of Forensic Accounting in Fraud Detection and Prevention</h2>
+                        <p>Explores forensic accounting techniques, their role in fraud detection, and strengthening corporate governance.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">3. Effect of Financial Statement Analysis on Investment Decision-Making</h2>
+                        <p>Investigates how financial statement analysis aids investors in making informed decisions and improves market efficiency.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">4. Evaluation of the Effectiveness of Internal Control Systems in Public Sector Organizations</h2>
+                        <p>Assesses how internal control systems enhance financial accountability and mitigate fraud risks.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">5. Impact of Financial Reporting on Corporate Performance</h2>
+                        <p>Explores the relationship between financial reporting quality and corporate performance, focusing on compliance with standards.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">6. The Impact of Audit Quality on Financial Performance</h2>
+                        <p>Analyzes how audit quality factors like independence and expertise influence financial performance and stakeholder trust.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">7. Assessment of the Role of External Auditors in Corporate Governance</h2>
+                        <p>Evaluates how external auditors ensure transparency, accountability, and compliance in corporate governance.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">8. Auditor Independence and Its Effect on Financial Statement Credibility</h2>
+                        <p>Examines how auditor independence impacts the credibility of financial statements and public trust.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">9. The Role of Internal Auditors in Fraud Prevention and Detection</h2>
+                        <p>Investigates internal auditors' contributions to fraud prevention and detection, offering insights into process improvement.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">10. The Effectiveness of Audit Committees in Ensuring Transparency</h2>
+                        <p>Assesses audit committees' role in promoting transparency and accountability in financial reporting.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">11. The Use of Budgetary Control in Enhancing Organizational Performance</h2>
+                        <p>Explores how budgetary control systems align resources with strategic goals and improve cost efficiency.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">12. Cost Control Techniques and Their Impact on Profitability</h2>
+                        <p>Examines the effectiveness of cost control techniques in reducing costs and improving profitability.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">13. Activity-Based Costing as a Tool for Decision Making in Manufacturing Firms</h2>
+                        <p>Investigates the use of activity-based costing (ABC) to aid decision-making in product pricing and resource allocation.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">14. Performance Evaluation and Management Using Balanced Scorecard</h2>
+                        <p>Evaluates the application of Balanced Scorecard for strategic performance management in organizations.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">15. The Role of Standard Costing in Profit Maximization</h2>
+                        <p>Examines the role of standard costing systems in achieving profit maximization through cost control.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">16. The Impact of Tax Evasion and Avoidance on Government Revenue</h2>
+                        <p>Explores how tax evasion and avoidance affect government revenue and economic development.</p>
+                      </a>
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">17. Effect of Value Added Tax (VAT) on Revenue Generation in Nigeria</h2>
+                        <p>Analyzes the contribution of VAT to government revenue and its implications for economic growth.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">18. The Role of Tax Administration in Economic Development</h2>
+                        <p>Explores the challenges and effectiveness of tax administration in driving economic growth and sustainability.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">19. Impact of Tax Incentives on Small and Medium Scale Enterprises (SMEs)</h2>
+                        <p>Examines how tax incentives stimulate the growth of SMEs and their contributions to the economy.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">20. An Assessment of Petroleum Profit Tax on Nigeria’s Economic Development</h2>
+                        <p>Investigates the role of petroleum profit tax in revenue generation and its effect on the economy.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">21. The Effectiveness of Government Expenditure on Economic Growth</h2>
+                        <p>Analyzes how government spending affects economic performance and development goals.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">22. The Impact of Budget Deficit on Economic Growth</h2>
+                        <p>Examines the implications of budget deficits for inflation, investment, and economic stability.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">23. The Role of Monetary Policy in Economic Stabilization</h2>
+                        <p>Explores how monetary policy tools influence inflation, unemployment, and growth.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">24. The Impact of Exchange Rate Fluctuations on Economic Growth</h2>
+                        <p>Analyzes how exchange rate volatility affects trade, investment, and economic performance.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">25. The Role of Financial Institutions in Economic Development</h2>
+                        <p>Investigates the contribution of banks and non-bank financial institutions to economic growth.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">26. The Effect of Inflation on Economic Growth in Nigeria</h2>
+                        <p>Explores the relationship between inflation and key economic indicators like GDP and unemployment.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">27. Impact of Commercial Banks on the Development of SMEs</h2>
+                        <p>Assesses how banks' lending practices and financial products support SME growth.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">28. The Effectiveness of Microfinance Institutions in Poverty Alleviation</h2>
+                        <p>Analyzes the role of microfinance in empowering low-income earners and promoting economic stability.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">29. Financial Inclusion and Its Impact on Economic Development</h2>
+                        <p>Explores how access to financial services drives economic growth and reduces poverty.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">30. The Role of Capital Market in Economic Growth</h2>
+                        <p>Examines the contribution of the capital market to investment and development in Nigeria.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">31. Analysis of the Impact of Banking Reforms on Financial Stability</h2>
+                        <p>Explores how reforms in the banking sector enhance financial stability and economic resilience.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">32. Credit Risk Management and Its Effect on Bank Performance</h2>
+                        <p>Investigates the strategies banks use to mitigate credit risks and improve financial outcomes.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">33. Corporate Governance and Its Impact on Organizational Performance</h2>
+                        <p>Analyzes how governance practices influence transparency, accountability, and overall performance.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">34. The Effect of Working Capital Management on Profitability</h2>
+                        <p>Explores how efficient working capital management improves liquidity and profitability.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">35. Corporate Social Responsibility and Its Effect on Corporate Performance</h2>
+                        <p>Examines how CSR initiatives enhance brand reputation and financial performance.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">36. The Role of Entrepreneurship in Economic Development</h2>
+                        <p>Investigates the contribution of entrepreneurial ventures to job creation and GDP growth.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">37. The Effectiveness of Performance Appraisal Systems</h2>
+                        <p>Explores how performance appraisals improve employee motivation and organizational efficiency.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">38. The Role of ICT in Enhancing Organizational Performance</h2>
+                        <p>Analyzes the impact of ICT adoption on efficiency, communication, and growth in businesses.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">39. The Role of E-Commerce in Business Performance</h2>
+                        <p>Examines how e-commerce platforms enhance sales, customer engagement, and market expansion.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">40. The Role of Leadership Style in Organizational Performance</h2>
+                        <p>Investigates the influence of leadership approaches on employee morale and productivity.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">41. An Analysis of Employee Motivation and Productivity</h2>
+                        <p>Explores the relationship between motivational strategies and employee output.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">42. The Impact of Recruitment and Selection on Organizational Performance</h2>
+                        <p>Examines how effective recruitment practices influence overall performance and retention.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">43. The Role of Strategic Management in Organizational Growth</h2>
+                        <p>Analyzes the importance of strategic planning and implementation in achieving long-term goals.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">44. The Impact of Change Management on Organizational Performance</h2>
+                        <p>Explores how managing change processes enhances adaptability and competitiveness.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">45. The Effectiveness of Financial Planning in Wealth Creation</h2>
+                        <p>Examines how financial planning practices contribute to personal and corporate wealth.</p>
+                      </a>  
+                  </li>
+                  
+              </ul>
+          </div>
+          
+          
+          <footer class="fixed bottom-4 right-4 bg-blue-500 dark:bg-blue-700 text-white dark:text-white py-2 px-4 rounded-full shadow-md">
+             
+        <!-- <a href="#" class="text-white dark:text-white">WhatsApp <img aria-hidden="true" alt="whatsapp" src="https://placehold.co/20?text=💬" class="inline-block w-4 h-4 ml-2"></a> -->
+
+        <a href="https://wa.me/+2348125984365"> <svg xmlns="http://www.w3.org/2000/svg" width="46" height="36" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+          </svg></a>
+          </footer>
+          
+      </div>
+  </body>
+  </html>
+    </body>
+  </html>
+</body>
+</html>
