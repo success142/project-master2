@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+          <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+          <script type="text/javascript">
+              window.tailwind.config = {
+                  darkMode: ['class'],
+                  theme: {
+                      extend: {
+                          colors: {
+                              border: 'hsl(var(--border))',
+                              input: 'hsl(var(--input))',
+                              ring: 'hsl(var(--ring))',
+                              background: 'hsl(var(--background))',
+                              foreground: 'hsl(var(--foreground))',
+                              primary: {
+                                  DEFAULT: 'hsl(var(--primary))',
+                                  foreground: 'hsl(var(--primary-foreground))'
+                              },
+                              secondary: {
+                                  DEFAULT: 'hsl(var(--secondary))',
+                                  foreground: 'hsl(var(--secondary-foreground))'
+                              },
+                              destructive: {
+                                  DEFAULT: 'hsl(var(--destructive))',
+                                  foreground: 'hsl(var(--destructive-foreground))'
+                              },
+                              muted: {
+                                  DEFAULT: 'hsl(var(--muted))',
+                                  foreground: 'hsl(var(--muted-foreground))'
+                              },
+                              accent: {
+                                  DEFAULT: 'hsl(var(--accent))',
+                                  foreground: 'hsl(var(--accent-foreground))'
+                              },
+                              popover: {
+                                  DEFAULT: 'hsl(var(--popover))',
+                                  foreground: 'hsl(var(--popover-foreground))'
+                              },
+                              card: {
+                                  DEFAULT: 'hsl(var(--card))',
+                                  foreground: 'hsl(var(--card-foreground))'
+                              },
+                          },
+                      }
+                  }
+              }
+          </script>
+          <style type="text/tailwindcss">
+              @layer base {
+                  :root {
+                      --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 240 5.9% 10%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 240 5.9% 10%;
+  --radius: 0.5rem;
+                  }
+                  .dark {
+                      --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 240 5.9% 10%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+                  }
+              }
+          </style>
+    </head>
+    <body>
+      <!DOCTYPE html>
+  <html lang="en">
+  <body class="bg-white dark:bg-zinc-900 text-black dark:text-white">
+      <div class="flex flex-col min-h-screen">
+          
+          
+          <header class="bg-white dark:bg-zinc-800 shadow-md">
+              <div class="container mx-auto flex items-center justify-between py-4 px-8">
+                  <div class="text-2xl font-bold text-blue-500 dark:text-blue-300">Logo</div>
+                  
+                  <nav class="hidden md:flex space-x-6">
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Home</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Projects</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Departments</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Hire a Writer</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Payments</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Downloads</a>
+                      <div class="relative group">
+                          <a href="#" class="text-zinc-600 dark:text-zinc-400 group-hover:text-blue-500 dark:group-hover:text-blue-300">Make Money</a>
+                          <div class="hidden group-hover:block absolute z-10 mt-2 py-2 bg-white dark:bg-zinc-800 shadow-md rounded-lg">
+                              <a href="#" class="block px-4 py-2 text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Get in Touch</a>
+                          </div>
+                      </div>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Campus Rep</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Blog</a>
+                  </nav>
+                  
+                  <button class="bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">Login</button>
+              </div>
+          </header>
+          
+          
+          <div class="container mx-auto py-8">
+              <input type="text" placeholder="What's your project topic?" class="mt-8 px-4 py-2 border border-zinc-300 dark:border-zinc-600 rounded-lg w-full md:w-1/2">
+              <button class="bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg mt-2">Search <img aria-hidden="true" alt="search" src="https://placehold.co/20?text=🔍" class="inline-block w-4 h-4 ml-2"></button>
+          </div>
+          
+          
+          <div class="container mx-auto">
+              <h1 class="text-3xl font-bold text-blue-500 dark:text-blue-300 mb-4">Accounting Project Topics & Research Materials | Final Year Research Project Topics With Free Chapter One</h1>
+              <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <li><a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">1. The Impact of Globalization on Sovereignty</h2>
+                    <p>This study explores the tension between globalization and national sovereignty, examining how international economic, political, and cultural integration affects state power and autonomy.</p>
+                  </a> </li>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">2. The Role of Diplomacy in International Conflict Resolution</h2>
+                    <p>This research investigates how diplomacy plays a central role in conflict resolution, focusing on negotiation strategies, peacekeeping missions, and the use of international organizations like the UN to mediate disputes.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">3. The Influence of International Trade Agreements on Political Relations</h2>
+                    <p>This paper examines how international trade agreements, such as NAFTA and the WTO, influence political relations between countries, promoting economic cooperation and sometimes leading to diplomatic challenges.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">4. The Role of Non-Governmental Organizations (NGOs) in Global Governance</h2>
+                    <p>This study analyzes the increasing influence of NGOs in global governance, particularly in areas like human rights, development aid, and environmental protection, challenging traditional state-centric international relations.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">5. The Impact of International Law on State Behavior</h2>
+                    <p>This research explores how international law, including treaties, conventions, and customary law, shapes state behavior, focusing on the enforcement mechanisms and the challenges of compliance in global relations.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">6. The Role of International Organizations in Promoting Global Health</h2>
+                    <p>This paper examines the role of international organizations, such as the WHO, in addressing global health challenges, including pandemics, infectious diseases, and public health policies in cross-border contexts.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">7. The Effects of Military Alliances on Global Security</h2>
+                    <p>This study investigates how military alliances, such as NATO, affect global security, focusing on their role in deterring conflicts, maintaining peace, and managing regional tensions.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">8. The Role of Economic Sanctions in Foreign Policy</h2>
+                    <p>This research examines the use of economic sanctions as a tool of foreign policy, analyzing their effectiveness in influencing state behavior and their consequences for global trade and diplomacy.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">9. The Influence of Nationalism on International Relations</h2>
+                    <p>This paper explores the resurgence of nationalism in global politics and its impact on international relations, particularly how nationalist movements affect diplomacy, cooperation, and international treaties.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">10. The Role of Regional Organizations in Conflict Prevention</h2>
+                    <p>This study examines the role of regional organizations, such as the African Union and ASEAN, in preventing conflicts, managing crises, and promoting peace and stability within specific geographic areas.</p>
+                  </a>
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">11. The Role of Public Diplomacy in International Relations</h2>
+                    <p>This paper explores the growing importance of public diplomacy in shaping international relations, focusing on the role of media, cultural exchanges, and soft power in influencing foreign policy outcomes.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">12. The Impact of Foreign Direct Investment (FDI) on Bilateral Relations</h2>
+                    <p>This research examines how foreign direct investment (FDI) affects bilateral relations between countries, analyzing the economic and political implications of cross-border investments and their role in fostering diplomatic ties.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">13. The Role of International Trade in Global Conflict Prevention</h2>
+                    <p>This study investigates the relationship between international trade and conflict prevention, exploring how economic interdependence reduces the likelihood of military confrontations between states.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">14. The Impact of Global Security Threats on Humanitarian Interventions</h2>
+                    <p>This research explores how global security threats, such as terrorism and armed conflicts, impact the scope and nature of humanitarian interventions, with a focus on the challenges of protecting civilians in conflict zones.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">15. The Role of International Environmental Agreements in Promoting Sustainability</h2>
+                    <p>This study analyzes the role of international environmental agreements, such as the Paris Agreement, in promoting sustainability and addressing global environmental challenges like climate change and biodiversity loss.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">16. The Role of International Development Assistance in Post-Conflict Reconstruction</h2>
+                    <p>This paper examines how international development assistance plays a crucial role in post-conflict reconstruction, focusing on the rebuilding of infrastructure, governance institutions, and economic systems in war-torn countries.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">17. The Influence of Social Media on Global Diplomacy</h2>
+                    <p>This research explores the influence of social media platforms on global diplomacy, analyzing how leaders and organizations use digital platforms to communicate, shape public opinion, and conduct international relations.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">18. The Role of Human Rights Advocacy in International Relations</h2>
+                    <p>This study investigates the role of human rights advocacy in international relations, focusing on the efforts of international organizations, NGOs, and state actors in promoting human rights globally.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">19. The Impact of International Migration on Bilateral Relations</h2>
+                    <p>This paper examines the impact of international migration on bilateral relations, analyzing how the movement of people between countries influences economic cooperation, cultural exchange, and diplomatic relations.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">20. The Role of International Education Exchange in Strengthening Global Ties</h2>
+                    <p>This research explores the role of international education exchange programs in strengthening global ties, focusing on the benefits of fostering cross-cultural understanding and building long-term diplomatic relationships.</p>
+                  </a> <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">21. The Impact of Multinational Corporations on Global Politics</h2>
+                    <p>This research explores how multinational corporations (MNCs) shape global politics, focusing on their influence on international trade, foreign policy, and power dynamics between states and private entities.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">22. The Role of Cultural Diplomacy in Shaping Global Power Dynamics</h2>
+                    <p>This paper examines how cultural diplomacy, through the promotion of national culture and values, enhances a country's soft power and influences its position in global power structures.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">23. The Influence of Political Ideologies on International Alliances</h2>
+                    <p>This study investigates how different political ideologies, such as liberalism, conservatism, and socialism, influence the formation and nature of international alliances and diplomatic relations between states.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">24. The Role of International Law in Addressing Global Humanitarian Crises</h2>
+                    <p>This research explores the role of international law in addressing humanitarian crises, including refugee protection, war crimes, and disaster relief efforts, highlighting the legal frameworks that guide international response efforts.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">25. The Effects of Cybersecurity Threats on International Relations</h2>
+                    <p>This paper examines how cybersecurity threats, such as cyberattacks and espionage, impact international relations, focusing on the strategies nations use to protect their interests in the digital age.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">26. The Influence of Economic Sanctions on Political Regimes</h2>
+                    <p>This study investigates the effectiveness of economic sanctions as a tool of foreign policy, analyzing their impact on political regimes, economic stability, and international diplomacy.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">27. The Role of International Trade in Post-Conflict Reconstruction</h2>
+                    <p>This research examines the role of international trade in post-conflict reconstruction, exploring how trade agreements and economic integration contribute to rebuilding war-torn economies and fostering lasting peace.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">28. The Impact of International Human Rights Organizations on Global Diplomacy</h2>
+                    <p>This paper explores the influence of international human rights organizations, such as Amnesty International and Human Rights Watch, in shaping global diplomatic policies and advocating for human rights standards across borders.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">29. The Role of Women in Shaping International Peacebuilding Efforts</h2>
+                    <p>This study examines the pivotal role women play in international peacebuilding processes, focusing on their involvement in negotiations, conflict resolution, and post-conflict reconstruction efforts.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">30. The Effects of International Migration on State Sovereignty</h2>
+                    <p>This research investigates how international migration, both voluntary and forced, challenges state sovereignty, particularly in relation to border control, citizenship laws, and national security concerns.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">31. The Role of International Trade in Promoting Sustainable Development</h2>
+                    <p>This study examines the relationship between international trade and sustainable development, focusing on how global trade policies can be designed to promote environmental sustainability and economic equity.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">32. The Influence of Global Media on International Relations</h2>
+                    <p>This research explores the role of global media in shaping international relations, analyzing how media outlets influence public opinion, foreign policy, and diplomatic strategies between countries.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">33. The Role of International Trade in Enhancing Global Economic Stability</h2>
+                    <p>This paper examines the role of international trade in enhancing global economic stability, with a focus on trade agreements, multinational corporations, and international financial institutions.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">34. The Impact of Global Health Initiatives on International Cooperation</h2>
+                    <p>This research investigates the role of global health initiatives, such as the Global Fund and GAVI, in fostering international cooperation, particularly in the fight against pandemics and global health inequalities.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">35. The Effects of International Trade Wars on Global Diplomacy</h2>
+                    <p>This study examines the effects of international trade wars, such as the U.S.-China trade conflict, on global diplomacy, focusing on economic retaliation, diplomatic tensions, and multilateral cooperation.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">36. The Role of Public Opinion in Shaping Foreign Policy</h2>
+                    <p>This paper explores how public opinion influences foreign policy decisions, focusing on how politicians and policymakers respond to domestic and international public sentiment on global issues.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">37. The Role of Technology in Shaping Modern Diplomacy</h2>
+                    <p>This research examines the role of technological advancements, such as social media, digital diplomacy, and cybersecurity, in shaping the practice and effectiveness of modern diplomacy.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">38. The Impact of Terrorism on International Relations and Security</h2>
+                    <p>This study investigates the impact of terrorism on international relations and global security, exploring the ways in which countries cooperate to combat terrorism and prevent future attacks.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">39. The Role of International Humanitarian Law in Protecting Civilians</h2>
+                    <p>This paper examines the role of international humanitarian law in protecting civilians during armed conflicts, focusing on the Geneva Conventions and the legal frameworks designed to prevent war crimes.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">40. The Influence of Regional Conflicts on Global Peace and Security</h2>
+                    <p>This research explores how regional conflicts, such as those in the Middle East and Africa, influence global peace and security, highlighting the role of international organizations in peacekeeping and conflict resolution.</p>
+                  </a>
+                                        
+                   
+                  </li>
+                  
+              </ul>
+          </div>
+          
+          
+          <footer class="fixed bottom-4 right-4 bg-blue-500 dark:bg-blue-700 text-white dark:text-white py-2 px-4 rounded-full shadow-md">
+             
+        <!-- <a href="#" class="text-white dark:text-white">WhatsApp <img aria-hidden="true" alt="whatsapp" src="https://placehold.co/20?text=💬" class="inline-block w-4 h-4 ml-2"></a> -->
+
+        <a href="https://wa.me/+2348125984365"> <svg xmlns="http://www.w3.org/2000/svg" width="46" height="36" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+          </svg></a>
+          </footer>
+          
+      </div>
+  </body>
+  </html>
+    </body>
+  </html>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+          <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+          <script type="text/javascript">
+              window.tailwind.config = {
+                  darkMode: ['class'],
+                  theme: {
+                      extend: {
+                          colors: {
+                              border: 'hsl(var(--border))',
+                              input: 'hsl(var(--input))',
+                              ring: 'hsl(var(--ring))',
+                              background: 'hsl(var(--background))',
+                              foreground: 'hsl(var(--foreground))',
+                              primary: {
+                                  DEFAULT: 'hsl(var(--primary))',
+                                  foreground: 'hsl(var(--primary-foreground))'
+                              },
+                              secondary: {
+                                  DEFAULT: 'hsl(var(--secondary))',
+                                  foreground: 'hsl(var(--secondary-foreground))'
+                              },
+                              destructive: {
+                                  DEFAULT: 'hsl(var(--destructive))',
+                                  foreground: 'hsl(var(--destructive-foreground))'
+                              },
+                              muted: {
+                                  DEFAULT: 'hsl(var(--muted))',
+                                  foreground: 'hsl(var(--muted-foreground))'
+                              },
+                              accent: {
+                                  DEFAULT: 'hsl(var(--accent))',
+                                  foreground: 'hsl(var(--accent-foreground))'
+                              },
+                              popover: {
+                                  DEFAULT: 'hsl(var(--popover))',
+                                  foreground: 'hsl(var(--popover-foreground))'
+                              },
+                              card: {
+                                  DEFAULT: 'hsl(var(--card))',
+                                  foreground: 'hsl(var(--card-foreground))'
+                              },
+                          },
+                      }
+                  }
+              }
+          </script>
+          <style type="text/tailwindcss">
+              @layer base {
+                  :root {
+                      --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 240 5.9% 10%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 240 5.9% 10%;
+  --radius: 0.5rem;
+                  }
+                  .dark {
+                      --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 240 5.9% 10%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+                  }
+              }
+          </style>
+    </head>
+    <body>
+      <!DOCTYPE html>
+  <html lang="en">
+  <body class="bg-white dark:bg-zinc-900 text-black dark:text-white">
+      <div class="flex flex-col min-h-screen">
+          
+          
+          <header class="bg-white dark:bg-zinc-800 shadow-md">
+              <div class="container mx-auto flex items-center justify-between py-4 px-8">
+                  <div class="text-2xl font-bold text-blue-500 dark:text-blue-300">Logo</div>
+                  
+                  <nav class="hidden md:flex space-x-6">
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Home</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Projects</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Departments</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Hire a Writer</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Payments</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Downloads</a>
+                      <div class="relative group">
+                          <a href="#" class="text-zinc-600 dark:text-zinc-400 group-hover:text-blue-500 dark:group-hover:text-blue-300">Make Money</a>
+                          <div class="hidden group-hover:block absolute z-10 mt-2 py-2 bg-white dark:bg-zinc-800 shadow-md rounded-lg">
+                              <a href="#" class="block px-4 py-2 text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Get in Touch</a>
+                          </div>
+                      </div>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Campus Rep</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Blog</a>
+                  </nav>
+                  
+                  <button class="bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">Login</button>
+              </div>
+          </header>
+          
+          
+          <div class="container mx-auto py-8">
+              <input type="text" placeholder="What's your project topic?" class="mt-8 px-4 py-2 border border-zinc-300 dark:border-zinc-600 rounded-lg w-full md:w-1/2">
+              <button class="bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg mt-2">Search <img aria-hidden="true" alt="search" src="https://placehold.co/20?text=🔍" class="inline-block w-4 h-4 ml-2"></button>
+          </div>
+          
+          
+          <div class="container mx-auto">
+              <h1 class="text-3xl font-bold text-blue-500 dark:text-blue-300 mb-4">Law Project Topics & Research Materials | Final Year Research Project Topics With Free Chapter One</h1>
+              <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <li>
+                    <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">1. The Role of Forensic Evidence in Criminal Justice Systems</h2>
+                        <p>This study explores the integration of forensic evidence in criminal investigations, highlighting its role in improving the accuracy of verdicts and ensuring justice in criminal trials.</p>
+                      </a> </li>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">2. The Legal Framework for Cybercrime and its Enforcement in Nigeria</h2>
+                        <p>This research examines Nigeria’s legal approaches to tackling cybercrime, assessing their effectiveness and identifying gaps in enforcement mechanisms.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">3. An Analysis of the Death Penalty as a Deterrent to Crime</h2>
+                        <p>This paper critically evaluates the use of capital punishment, discussing its moral, legal, and deterrent implications in modern criminal justice systems.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">4. The Impact of Plea Bargaining on Criminal Justice Administration</h2>
+                        <p>The study investigates the practice of plea bargaining, analyzing its impact on the efficiency of the justice system and its implications for fairness.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">5. Challenges in Prosecuting Human Trafficking Cases: A Case Study of Nigeria</h2>
+                        <p>This research identifies the legal and procedural challenges involved in prosecuting human trafficking, with recommendations for enhancing judicial outcomes.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">6. Separation of Powers and its Challenges in Nigeria's Democracy</h2>
+                        <p>This paper assesses the practical application of the separation of powers in Nigeria, identifying challenges to its effective implementation.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">7. Judicial Activism and its Impact on Constitutional Interpretation</h2>
+                        <p>The study explores how judicial activism influences constitutional law, with a focus on landmark cases and their societal impact.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">8. Freedom of Expression vs. National Security: A Legal Perspective</h2>
+                        <p>This research examines the tension between protecting free speech and safeguarding national security, proposing a balanced legal framework.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">9. The Role of the Judiciary in Upholding Human Rights under the 1999 Constitution</h2>
+                        <p>The study evaluates the judiciary’s role in interpreting and enforcing human rights provisions in Nigeria’s 1999 Constitution.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">10. Legal Implications of State of Emergency Declarations in Nigeria</h2>
+                        <p>This paper analyzes the legal and constitutional implications of declaring states of emergency, focusing on rights limitations and government powers.</p>
+                      </a>
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">11. The Legal Challenges of Child Custody in Divorce Proceedings</h2>
+                        <p>This research explores the factors influencing custody decisions and the effectiveness of legal frameworks in protecting children’s interests.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">12. Domestic Violence and the Effectiveness of Family Law Remedies</h2>
+                        <p>The study examines the adequacy of existing legal remedies for domestic violence victims and suggests reforms to improve protections.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">13. The Impact of Customary Law on Women’s Inheritance Rights</h2>
+                        <p>This paper investigates the conflict between customary practices and statutory laws regarding inheritance rights for women.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">14. A Comparative Study of Adoption Laws in Nigeria and the UK</h2>
+                        <p>This research compares adoption laws, highlighting similarities, differences, and lessons Nigeria can adopt from the UK system.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">15. Legal Framework for Surrogacy in Nigeria: Challenges and Prospects</h2>
+                        <p>The study analyzes the legal challenges of surrogacy in Nigeria and the prospects for establishing a robust regulatory framework.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">16. The Effectiveness of Corporate Governance Laws in Nigeria</h2>
+                        <p>This research evaluates the impact of corporate governance laws on business operations, with recommendations for strengthening compliance.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">17. Legal Challenges in Regulating Cryptocurrency Transactions in Nigeria</h2>
+                        <p>The paper explores the regulatory challenges of cryptocurrencies, focusing on their legality, taxation, and implications for financial security.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">18. Consumer Protection in E-commerce: A Critical Legal Analysis</h2>
+                        <p>This study examines the adequacy of consumer protection laws in addressing issues arising from e-commerce transactions.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">19. Corporate Social Responsibility: Legal Obligations vs. Voluntary Actions</h2>
+                        <p>The research investigates the extent to which CSR is legally mandated and its role in fostering ethical business practices.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">20. The Role of Arbitration in Resolving Commercial Disputes</h2>
+                        <p>This paper evaluates arbitration as a mechanism for resolving commercial disputes, emphasizing its benefits and limitations.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">21. Legal Measures for Addressing Environmental Pollution in the Niger Delta</h2>
+                        <p>This study assesses the effectiveness of environmental laws in addressing pollution issues in the Niger Delta region.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">22. The Impact of Climate Change Laws on Sustainable Development in Nigeria</h2>
+                        <p>This research examines climate change laws and their contribution to achieving sustainable development goals in Nigeria.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">23. A Legal Analysis of Waste Management Policies in Urban Areas</h2>
+                        <p>This paper analyzes the legal framework for urban waste management, identifying gaps and proposing actionable solutions.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">24. The Role of International Law in Biodiversity Conservation</h2>
+                        <p>This research explores how international legal frameworks contribute to biodiversity conservation, with a focus on Nigeria.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">25. Legal Framework for Renewable Energy Development in Nigeria</h2>
+                        <p>The study investigates the regulatory environment for renewable energy projects and their alignment with national development goals.</p>
+                      </a>
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">26. The Role of International Law in Combating Terrorism</h2>
+                        <p>This study examines the application of international legal instruments in combating terrorism, focusing on Nigeria's compliance and challenges.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">27. Humanitarian Law and the Challenges of Refugee Protection</h2>
+                        <p>The paper analyzes the role of humanitarian law in refugee protection, exploring its implementation in conflict-prone regions.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">28. A Critical Analysis of Nigeria’s Compliance with United Nations Sanctions</h2>
+                        <p>This research evaluates Nigeria's adherence to UN-imposed sanctions and the implications for its foreign policy and sovereignty.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">29. The Legal Status of International Treaties in Domestic Law</h2>
+                        <p>The study explores the domestication of international treaties in Nigeria, identifying challenges in enforcement and implementation.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">30. Cyber Warfare and International Humanitarian Law: Emerging Issues</h2>
+                        <p>This paper examines how international humanitarian law addresses the challenges posed by cyber warfare in modern conflicts.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">31. The Legal Framework for Land Use in Nigeria: Challenges and Solutions</h2>
+                        <p>This research investigates the adequacy of Nigeria’s land use laws and proposes reforms for equitable and sustainable land management.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">32. Examining the Effectiveness of Land Tenure Systems in Rural Development</h2>
+                        <p>The study assesses how land tenure systems influence rural development and resource allocation in Nigeria.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">33. The Impact of Urbanization on Land Rights and Housing Laws</h2>
+                        <p>This paper explores the legal challenges arising from urbanization, focusing on land rights and housing policies in Nigerian cities.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">34. The Legal Challenges of Real Estate Transactions in Nigeria</h2>
+                        <p>The research examines the regulatory and procedural hurdles in real estate transactions, proposing reforms to streamline processes.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">35. Customary Land Ownership vs. Statutory Provisions: A Case Study</h2>
+                        <p>This study analyzes conflicts between customary land ownership practices and statutory laws, with case studies from selected Nigerian communities.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">36. The Protection of Copyrights in the Digital Era</h2>
+                        <p>This research investigates the effectiveness of copyright laws in addressing challenges posed by digital piracy and content sharing.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">37. Legal Challenges in Patent Law for Biotechnology Innovations</h2>
+                        <p>The study explores the gaps in patent laws concerning biotechnology, with recommendations for fostering innovation.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">38. A Comparative Study of Intellectual Property Rights in Nigeria and South Africa</h2>
+                        <p>This research compares IP laws in Nigeria and South Africa, identifying best practices for effective protection and enforcement.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">39. Trademarks and Brand Protection: Legal Remedies in Cases of Infringement</h2>
+                        <p>The paper examines the legal remedies available for trademark infringement, emphasizing their adequacy in brand protection.</p>
+                      </a>
+                      
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">40. The Role of IP Laws in Promoting Indigenous Knowledge Systems</h2>
+                        <p>This study investigates how intellectual property laws can be used to protect and promote indigenous knowledge and cultural heritage.</p>
+                      </a>
+                                                                  
+                      
+                  </li>
+                  
+              </ul>
+          </div>
+          
+          
+          <footer class="fixed bottom-4 right-4 bg-blue-500 dark:bg-blue-700 text-white dark:text-white py-2 px-4 rounded-full shadow-md">
+             
+        <!-- <a href="#" class="text-white dark:text-white">WhatsApp <img aria-hidden="true" alt="whatsapp" src="https://placehold.co/20?text=💬" class="inline-block w-4 h-4 ml-2"></a> -->
+
+        <a href="https://wa.me/+2348125984365"> <svg xmlns="http://www.w3.org/2000/svg" width="46" height="36" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+          </svg></a>
+          </footer>
+          
+      </div>
+  </body>
+  </html>
+    </body>
+  </html>
+</body>
+</html>
+</body>
+</html>

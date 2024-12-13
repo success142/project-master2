@@ -1,0 +1,391 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+          <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+          <script type="text/javascript">
+              window.tailwind.config = {
+                  darkMode: ['class'],
+                  theme: {
+                      extend: {
+                          colors: {
+                              border: 'hsl(var(--border))',
+                              input: 'hsl(var(--input))',
+                              ring: 'hsl(var(--ring))',
+                              background: 'hsl(var(--background))',
+                              foreground: 'hsl(var(--foreground))',
+                              primary: {
+                                  DEFAULT: 'hsl(var(--primary))',
+                                  foreground: 'hsl(var(--primary-foreground))'
+                              },
+                              secondary: {
+                                  DEFAULT: 'hsl(var(--secondary))',
+                                  foreground: 'hsl(var(--secondary-foreground))'
+                              },
+                              destructive: {
+                                  DEFAULT: 'hsl(var(--destructive))',
+                                  foreground: 'hsl(var(--destructive-foreground))'
+                              },
+                              muted: {
+                                  DEFAULT: 'hsl(var(--muted))',
+                                  foreground: 'hsl(var(--muted-foreground))'
+                              },
+                              accent: {
+                                  DEFAULT: 'hsl(var(--accent))',
+                                  foreground: 'hsl(var(--accent-foreground))'
+                              },
+                              popover: {
+                                  DEFAULT: 'hsl(var(--popover))',
+                                  foreground: 'hsl(var(--popover-foreground))'
+                              },
+                              card: {
+                                  DEFAULT: 'hsl(var(--card))',
+                                  foreground: 'hsl(var(--card-foreground))'
+                              },
+                          },
+                      }
+                  }
+              }
+          </script>
+          <style type="text/tailwindcss">
+              @layer base {
+                  :root {
+                      --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 240 5.9% 10%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 240 5.9% 10%;
+  --radius: 0.5rem;
+                  }
+                  .dark {
+                      --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 240 5.9% 10%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+                  }
+              }
+          </style>
+    </head>
+    <body>
+      <!DOCTYPE html>
+  <html lang="en">
+  <body class="bg-white dark:bg-zinc-900 text-black dark:text-white">
+      <div class="flex flex-col min-h-screen">
+          
+          
+          <header class="bg-white dark:bg-zinc-800 shadow-md">
+              <div class="container mx-auto flex items-center justify-between py-4 px-8">
+                  <div class="text-2xl font-bold text-blue-500 dark:text-blue-300">Logo</div>
+                  
+                  <nav class="hidden md:flex space-x-6">
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Home</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Projects</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Departments</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Hire a Writer</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Payments</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Downloads</a>
+                      <div class="relative group">
+                          <a href="#" class="text-zinc-600 dark:text-zinc-400 group-hover:text-blue-500 dark:group-hover:text-blue-300">Make Money</a>
+                          <div class="hidden group-hover:block absolute z-10 mt-2 py-2 bg-white dark:bg-zinc-800 shadow-md rounded-lg">
+                              <a href="#" class="block px-4 py-2 text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Get in Touch</a>
+                          </div>
+                      </div>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Campus Rep</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Blog</a>
+                  </nav>
+                  
+                  <button class="bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">Login</button>
+              </div>
+          </header>
+          
+          
+          <div class="container mx-auto py-8">
+              <input type="text" placeholder="What's your project topic?" class="mt-8 px-4 py-2 border border-zinc-300 dark:border-zinc-600 rounded-lg w-full md:w-1/2">
+              <button class="bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg mt-2">Search <img aria-hidden="true" alt="search" src="https://placehold.co/20?text=🔍" class="inline-block w-4 h-4 ml-2"></button>
+          </div>
+          
+          
+          <div class="container mx-auto">
+              <h1 class="text-3xl font-bold text-blue-500 dark:text-blue-300 mb-4">Home economics Project Topics & Research Materials | Final Year Research Project Topics With Free Chapter One</h1>
+              <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <li>
+                        <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                          <h2 class="font-bold">1. The Role of Nutrition in Promoting Healthy Living</h2>
+                          <p>This study explores the critical role nutrition plays in maintaining a healthy lifestyle, emphasizing the importance of balanced diets in preventing chronic diseases. The research highlights strategies for promoting nutritional education and examines the socioeconomic factors influencing food choices.</p>
+                        </a> </li>
+                      
+                        <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                          <h2 class="font-bold">2. The Impact of Financial Literacy on Household Budgeting</h2>
+                          <p>This paper investigates the relationship between financial literacy and effective household budgeting. It identifies key challenges families face in managing finances and evaluates educational programs aimed at improving financial decision-making skills.</p>
+                        </a>
+                      
+                        <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                          <h2 class="font-bold">3. The Effects of Processed Foods on Family Health</h2>
+                          <p>The study examines the health implications of processed food consumption among families. It assesses the nutritional value of processed foods and their potential link to lifestyle-related diseases, proposing healthier dietary alternatives.</p>
+                        </a>
+                      
+                        <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                          <h2 class="font-bold">4. The Influence of Cultural Practices on Food Choices</h2>
+                          <p>This research analyzes how cultural traditions and beliefs shape dietary habits. By examining different cultural groups, it identifies the benefits and challenges of maintaining traditional food practices in modern societies.</p>
+                        </a>
+                      
+                        <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                          <h2 class="font-bold">5. The Role of Home Economics Education in Rural Development</h2>
+                          <p>This study evaluates the contribution of home economics education to rural community development. It explores how skills such as food preservation, financial management, and family planning can enhance quality of life in rural areas.</p>
+                        </a>
+                      
+                        <!-- Add similar numbered sections for the remaining abstracts -->
+                      
+                    
+                    
+                        
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">53. Analysis of Soil Microbial Activity in Organic Farming</h2>
+                        <p>This research evaluates the impact of organic farming practices on soil microbial diversity and activity, highlighting benefits for soil health.</p>
+                      </a>
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">6. The Impact of Household Waste Management on Environmental Sustainability</h2>
+                        <p>This paper investigates the role of proper household waste management in promoting environmental sustainability. It highlights practices such as recycling and composting and their effects on reducing waste pollution.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">7. The Effects of Work-Life Balance on Family Wellbeing</h2>
+                        <p>This study explores how achieving work-life balance affects family relationships and overall wellbeing. It provides strategies for managing time effectively and mitigating stress among working parents.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">8. The Role of Home Gardening in Enhancing Food Security</h2>
+                        <p>This research examines how home gardening contributes to food security by providing families with fresh and nutritious produce. The study also assesses its economic and environmental benefits.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">9. The Influence of Parenting Styles on Adolescent Behavior</h2>
+                        <p>The study explores the relationship between different parenting styles and adolescent behavior. It focuses on how disciplinary methods, communication, and emotional support impact adolescent development.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">10. The Effects of Textile Recycling on Household Savings</h2>
+                        <p>This research evaluates how textile recycling can reduce household expenses while promoting environmental sustainability. It highlights practical methods for reusing old fabrics and their financial benefits.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">11. The Role of Food Preservation in Reducing Household Food Waste</h2>
+                        <p>This study investigates traditional and modern food preservation techniques and their effectiveness in minimizing food waste at the household level. It provides insights into how these methods improve food security and reduce environmental impact.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">12. The Impact of Family Dynamics on Nutritional Choices</h2>
+                        <p>This research examines how family relationships and communication influence nutritional decisions. It emphasizes the role of collective meal planning and eating habits in improving dietary quality.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">13. The Effect of Modern Kitchen Technology on Meal Preparation</h2>
+                        <p>This study evaluates the impact of advanced kitchen appliances on time management, energy efficiency, and nutritional outcomes in meal preparation. It highlights the trade-offs between traditional cooking methods and technology-based solutions.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">14. The Role of Home Economics in Empowering Women Entrepreneurs</h2>
+                        <p>This research explores how home economics skills like baking, tailoring, and interior design can help women build sustainable businesses, contributing to financial independence and community development.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">15. The Effect of Urbanization on Traditional Cooking Practices</h2>
+                        <p>This study examines how rapid urbanization influences the adoption of modern cooking methods and the decline of traditional practices. It analyzes the cultural implications and nutritional changes associated with this shift.</p>
+                      </a>
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">16. The Impact of Stress on Meal Planning and Eating Habits</h2>
+                        <p>This research investigates how stress affects dietary choices, focusing on the prevalence of unhealthy eating patterns among working adults. The study suggests strategies for promoting healthy meal planning under stress.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">17. The Role of Home Economics in Addressing Malnutrition in Children</h2>
+                        <p>This paper evaluates how home economics education can help reduce child malnutrition by teaching parents about nutritional needs, meal preparation, and balanced diets.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">18. The Effectiveness of Financial Management Strategies in Single-Parent Households</h2>
+                        <p>This research examines the challenges single-parent households face in financial management and evaluates strategies for improving savings, budgeting, and financial security.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">19. The Impact of Cultural Festivals on Traditional Craft Preservation</h2>
+                        <p>This study explores how cultural festivals help preserve traditional crafts like weaving and embroidery, emphasizing their role in cultural identity and economic empowerment.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">20. The Role of Home-Based Businesses in Alleviating Poverty</h2>
+                        <p>This research investigates how home-based businesses like catering and tailoring can provide families with stable income sources, reduce unemployment, and promote financial independence.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">21. The Effects of Technology on Household Chores</h2>
+                        <p>This study examines how innovations like automated vacuum cleaners and smart home systems reduce the burden of household chores and improve work-life balance.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">22. The Influence of Food Advertising on Children's Eating Habits</h2>
+                        <p>This research analyzes the effect of food advertising on children's dietary preferences and eating behaviors, with a focus on unhealthy food consumption trends.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">23. The Role of Financial Planning in Retirement Readiness</h2>
+                        <p>This study evaluates the importance of financial literacy in preparing individuals for retirement, emphasizing budgeting, savings, and investment strategies.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">24. The Effects of Family Meal Times on Emotional Bonding</h2>
+                        <p>This research explores how shared family meals strengthen emotional bonds and improve communication among family members.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">25. The Role of Handicrafts in Economic Empowerment</h2>
+                        <p>This study investigates how traditional handicrafts contribute to the financial independence of artisans, especially women in rural areas.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">26. The Impact of Meal Planning Apps on Household Budgeting</h2>
+                        <p>This research evaluates how digital meal planning tools help households manage food expenses, reduce waste, and improve dietary habits.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">27. The Role of Home Economics in Disaster Preparedness</h2>
+                        <p>This study explores how home economics education can help families prepare for emergencies through skills like food storage, budgeting, and basic first aid.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">28. The Effects of Extended Family Structures on Resource Allocation</h2>
+                        <p>This research examines how extended family arrangements influence financial and material resource sharing, with a focus on developing countries.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">29. The Role of Home Economics in Promoting Sustainable Living</h2>
+                        <p>This study investigates how home economics education encourages sustainable practices like waste reduction, energy conservation, and ethical consumption.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">30. The Impact of Parenting Classes on Family Cohesion</h2>
+                        <p>This research evaluates the effectiveness of parenting classes in improving family dynamics, communication, and conflict resolution.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">31. The Role of Home Cooking in Reducing Obesity Rates</h2>
+                        <p>This study explores how preparing meals at home, as opposed to eating out, contributes to healthier eating habits and weight management.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">32. The Effect of Social Media on Home-Based Entrepreneurship</h2>
+                        <p>This research analyzes how social media platforms provide opportunities for home-based entrepreneurs to market their products and reach wider audiences.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">33. The Role of Sustainable Fabric Production in Household Textiles</h2>
+                        <p>This study investigates the environmental and economic benefits of using sustainable fabrics for household purposes, emphasizing their durability and cost-effectiveness.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">34. The Impact of Home Economics in Teaching Conflict Resolution Skills</h2>
+                        <p>This research evaluates how home economics education fosters effective communication and conflict resolution skills within families.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">35. The Effects of Fast Food Culture on Traditional Meals</h2>
+                        <p>This study examines how the growing fast food culture affects the preparation and consumption of traditional meals, with implications for health and cultural preservation.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">36. The Role of Household Hygiene in Disease Prevention</h2>
+                        <p>This research investigates how household cleanliness and sanitation practices reduce the spread of common illnesses and improve overall family health.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">37. The Impact of Community Kitchens on Food Insecurity</h2>
+                        <p>This study explores how community kitchens address food insecurity by providing nutritious meals to underprivileged populations.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">38. The Role of Household Chores in Children's Development</h2>
+                        <p>This research examines how assigning household responsibilities to children contributes to their emotional and social development.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">39. The Effectiveness of Online Learning in Home Economics Education</h2>
+                        <p>This study evaluates the challenges and benefits of delivering home economics education through online platforms, with a focus on skill acquisition and engagement.</p>
+                      </a>
+                    
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">40. The Role of Home Economics in Addressing Food Allergies</h2>
+                        <p>This research explores how home economics education helps families manage food allergies through meal planning, ingredient selection, and awareness.</p>
+                      </a>
+                    </div>                    
+                      
+                  </li>
+                  
+              </ul>
+          </div>
+          
+          
+          <footer class="fixed bottom-4 right-4 bg-blue-500 dark:bg-blue-700 text-white dark:text-white py-2 px-4 rounded-full shadow-md">
+             
+        <!-- <a href="#" class="text-white dark:text-white">WhatsApp <img aria-hidden="true" alt="whatsapp" src="https://placehold.co/20?text=💬" class="inline-block w-4 h-4 ml-2"></a> -->
+
+        <a href="https://wa.me/+2348125984365"> <svg xmlns="http://www.w3.org/2000/svg" width="46" height="36" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+          </svg></a>
+          </footer>
+          
+      </div>
+  </body>
+  </html>
+    </body>
+  </html>
+</body>
+</html>
+</body>
+</html>

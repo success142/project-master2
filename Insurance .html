@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+          <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+          <script type="text/javascript">
+              window.tailwind.config = {
+                  darkMode: ['class'],
+                  theme: {
+                      extend: {
+                          colors: {
+                              border: 'hsl(var(--border))',
+                              input: 'hsl(var(--input))',
+                              ring: 'hsl(var(--ring))',
+                              background: 'hsl(var(--background))',
+                              foreground: 'hsl(var(--foreground))',
+                              primary: {
+                                  DEFAULT: 'hsl(var(--primary))',
+                                  foreground: 'hsl(var(--primary-foreground))'
+                              },
+                              secondary: {
+                                  DEFAULT: 'hsl(var(--secondary))',
+                                  foreground: 'hsl(var(--secondary-foreground))'
+                              },
+                              destructive: {
+                                  DEFAULT: 'hsl(var(--destructive))',
+                                  foreground: 'hsl(var(--destructive-foreground))'
+                              },
+                              muted: {
+                                  DEFAULT: 'hsl(var(--muted))',
+                                  foreground: 'hsl(var(--muted-foreground))'
+                              },
+                              accent: {
+                                  DEFAULT: 'hsl(var(--accent))',
+                                  foreground: 'hsl(var(--accent-foreground))'
+                              },
+                              popover: {
+                                  DEFAULT: 'hsl(var(--popover))',
+                                  foreground: 'hsl(var(--popover-foreground))'
+                              },
+                              card: {
+                                  DEFAULT: 'hsl(var(--card))',
+                                  foreground: 'hsl(var(--card-foreground))'
+                              },
+                          },
+                      }
+                  }
+              }
+          </script>
+          <style type="text/tailwindcss">
+              @layer base {
+                  :root {
+                      --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 240 5.9% 10%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 240 5.9% 10%;
+  --radius: 0.5rem;
+                  }
+                  .dark {
+                      --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 240 5.9% 10%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+                  }
+              }
+          </style>
+    </head>
+    <body>
+      <!DOCTYPE html>
+  <html lang="en">
+  <body class="bg-white dark:bg-zinc-900 text-black dark:text-white">
+      <div class="flex flex-col min-h-screen">
+          
+          
+          <header class="bg-white dark:bg-zinc-800 shadow-md">
+              <div class="container mx-auto flex items-center justify-between py-4 px-8">
+                  <div class="text-2xl font-bold text-blue-500 dark:text-blue-300">Logo</div>
+                  
+                  <nav class="hidden md:flex space-x-6">
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Home</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Projects</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Departments</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Hire a Writer</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Payments</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Downloads</a>
+                      <div class="relative group">
+                          <a href="#" class="text-zinc-600 dark:text-zinc-400 group-hover:text-blue-500 dark:group-hover:text-blue-300">Make Money</a>
+                          <div class="hidden group-hover:block absolute z-10 mt-2 py-2 bg-white dark:bg-zinc-800 shadow-md rounded-lg">
+                              <a href="#" class="block px-4 py-2 text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Get in Touch</a>
+                          </div>
+                      </div>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Campus Rep</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Blog</a>
+                  </nav>
+                  
+                  <button class="bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">Login</button>
+              </div>
+          </header>
+          
+          
+          <div class="container mx-auto py-8">
+              <input type="text" placeholder="What's your project topic?" class="mt-8 px-4 py-2 border border-zinc-300 dark:border-zinc-600 rounded-lg w-full md:w-1/2">
+              <button class="bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg mt-2">Search <img aria-hidden="true" alt="search" src="https://placehold.co/20?text=🔍" class="inline-block w-4 h-4 ml-2"></button>
+          </div>
+          
+          
+          <div class="container mx-auto">
+              <h1 class="text-3xl font-bold text-blue-500 dark:text-blue-300 mb-4">Accounting Project Topics & Research Materials | Final Year Research Project Topics With Free Chapter One</h1>
+              <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <li><a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">1. The Impact of Digital Transformation on the Insurance Industry</h2>
+                    <p>This research explores how digital transformation is reshaping the insurance industry, focusing on the adoption of technologies like AI, blockchain, and data analytics to improve operations and customer service.</p>
+                  </a> </li>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">2. The Role of Actuarial Science in Risk Assessment and Pricing</h2>
+                    <p>This study investigates the importance of actuarial science in assessing risk and determining insurance premiums. It highlights the mathematical models and statistical methods used in pricing insurance products.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">3. The Effects of Regulation on the Global Insurance Market</h2>
+                    <p>This research examines the impact of regulatory frameworks on the global insurance market, analyzing how policies and regulations affect competition, innovation, and consumer protection.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">4. The Role of Insurance in Risk Management for Businesses</h2>
+                    <p>This paper explores how businesses use insurance as a tool for managing financial risks, including property, liability, and employee-related risks, and the benefits of comprehensive insurance coverage.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">5. The Impact of Insurtech on Traditional Insurance Models</h2>
+                    <p>This study investigates how the rise of insurtech startups is challenging traditional insurance models, examining innovations such as digital platforms, usage-based insurance, and automated claims processing.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">6. The Effectiveness of Fraud Prevention Measures in the Insurance Industry</h2>
+                    <p>This research evaluates the effectiveness of fraud prevention strategies used by insurance companies, focusing on technologies and processes designed to detect and prevent fraudulent claims.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">7. The Role of Insurance in Enhancing Financial Inclusion</h2>
+                    <p>This paper examines how insurance products are being used to improve financial inclusion, particularly in developing countries, by providing accessible and affordable coverage to underserved populations.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">8. The Impact of Climate Change on the Insurance Industry</h2>
+                    <p>This research explores how climate change is influencing the insurance industry, including the increased frequency and severity of natural disasters and the challenges insurers face in adjusting pricing models and coverage policies.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">9. The Role of Reinsurance in Mitigating Risks for Insurers</h2>
+                    <p>This study examines the role of reinsurance in the insurance industry, focusing on how insurers transfer risk to reinsurers to maintain financial stability and manage large-scale claims.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">10. The Influence of Consumer Behavior on Insurance Product Design</h2>
+                    <p>This research investigates how consumer preferences and behavior influence the design and development of insurance products, focusing on customization, digital engagement, and customer satisfaction.</p>
+                  </a> <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">11. The Effect of Digital Marketing on Insurance Sales</h2>
+                    <p>This research explores the impact of digital marketing strategies on insurance sales, including the use of social media, search engine optimization, and personalized advertising in attracting and retaining customers.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">12. The Role of Underwriting in the Insurance Process</h2>
+                    <p>This study examines the underwriting process in insurance, focusing on how underwriters assess risk, set premiums, and determine coverage terms for policyholders.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">13. The Role of Artificial Intelligence in Insurance Claims Processing</h2>
+                    <p>This research investigates how artificial intelligence (AI) is transforming claims processing in the insurance industry, improving efficiency, reducing fraud, and enhancing customer experience.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">14. The Effect of Customer Relationship Management on Insurance Companies</h2>
+                    <p>This paper explores how customer relationship management (CRM) systems help insurance companies build long-term relationships with policyholders, increase retention rates, and improve customer service.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">15. The Impact of Global Economic Trends on the Insurance Industry</h2>
+                    <p>This study examines how global economic trends, such as inflation, recessions, and interest rate fluctuations, affect the insurance industry and influence policy pricing, investments, and risk assessment.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">16. The Role of Cyber Insurance in Protecting Businesses</h2>
+                    <p>This research investigates the growing importance of cyber insurance in the digital age, focusing on how insurance policies help businesses protect themselves against data breaches, cyberattacks, and digital risks.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">17. The Effects of Demographic Changes on Insurance Demand</h2>
+                    <p>This paper analyzes the effects of demographic changes, such as aging populations and changing family structures, on the demand for different types of insurance products.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">18. The Role of Social Media in Shaping Insurance Consumer Behavior</h2>
+                    <p>This research explores the influence of social media on consumer behavior in the insurance market, focusing on how platforms like Facebook, Twitter, and Instagram impact purchasing decisions and brand loyalty.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">19. The Impact of Regulatory Compliance on Insurance Operations</h2>
+                    <p>This study investigates the role of regulatory compliance in shaping insurance operations, including how insurers comply with national and international regulations regarding reporting, transparency, and solvency requirements.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">20. The Role of Insurers in Promoting Financial Literacy</h2>
+                    <p>This paper examines how insurance companies can play a key role in promoting financial literacy, particularly in educating consumers about the benefits and necessity of various insurance products.</p>
+                  </a> <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">21. The Influence of Behavioral Economics on Insurance Pricing</h2>
+                    <p>This research explores how behavioral economics affects insurance pricing, focusing on the psychological factors that influence consumer decisions and insurers’ strategies for setting premiums.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">22. The Role of Big Data in Risk Assessment for Insurance Companies</h2>
+                    <p>This study investigates how big data analytics is transforming the insurance industry by enabling insurers to better assess risks, improve underwriting accuracy, and offer personalized policies.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">23. The Impact of Climate Change on Property and Casualty Insurance</h2>
+                    <p>This paper examines the effect of climate change on the property and casualty insurance sector, including how insurers are adjusting their policies to address the rising frequency of extreme weather events.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">24. The Role of Artificial Intelligence in Underwriting and Claims Management</h2>
+                    <p>This research explores how artificial intelligence (AI) is revolutionizing underwriting and claims management processes, focusing on automation, predictive modeling, and enhanced customer service.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">25. The Effects of Financial Technology (FinTech) on the Insurance Industry</h2>
+                    <p>This study examines the impact of financial technology (FinTech) innovations on the insurance industry, focusing on digital platforms, payment solutions, and how they are reshaping customer experiences and operational efficiency.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">26. The Role of Insurance in Managing Healthcare Costs</h2>
+                    <p>This research explores how health insurance plays a critical role in managing healthcare costs, focusing on policy design, cost-sharing mechanisms, and strategies to address rising medical expenses.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">27. The Influence of Consumer Protection Laws on Insurance Practices</h2>
+                    <p>This paper investigates how consumer protection laws shape insurance practices, particularly regarding transparency, policyholder rights, and dispute resolution mechanisms.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">28. The Role of Social Insurance Programs in Developing Economies</h2>
+                    <p>This study examines the role of social insurance programs in developing economies, focusing on how government-run insurance schemes help protect vulnerable populations and promote financial stability.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">29. The Impact of Behavioral Biases on Insurance Purchasing Decisions</h2>
+                    <p>This research explores how behavioral biases, such as loss aversion and overconfidence, affect consumer decisions when purchasing insurance products, and the implications for insurers.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">30. The Role of Peer-to-Peer Insurance in the Future of Risk Management</h2>
+                    <p>This paper investigates the emerging model of peer-to-peer insurance, analyzing how this model challenges traditional insurance structures by allowing individuals to pool risk and reduce costs.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">31. The Impact of Insurance Fraud on Premiums and Industry Profitability</h2>
+                    <p>This study examines the impact of insurance fraud on premium pricing and overall industry profitability, discussing detection methods, prevention strategies, and their economic consequences.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">32. The Role of Blockchain Technology in Enhancing Insurance Transparency</h2>
+                    <p>This research explores how blockchain technology is improving transparency and efficiency in the insurance industry, particularly in claims processing, underwriting, and fraud prevention.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">33. The Effects of the Sharing Economy on Insurance Models</h2>
+                    <p>This study investigates how the rise of the sharing economy is changing insurance models, particularly in areas like car-sharing, home-sharing, and other peer-to-peer services.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">34. The Role of Environmental, Social, and Governance (ESG) Criteria in Insurance Investment</h2>
+                    <p>This research explores how insurance companies are integrating ESG criteria into their investment strategies, focusing on sustainability and ethical considerations in the underwriting process.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">35. The Impact of Insurance Penetration on Economic Development</h2>
+                    <p>This paper examines the relationship between insurance penetration and economic development, particularly in emerging markets, and how increased access to insurance products fosters financial inclusion.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">36. The Future of Life Insurance in an Aging Population</h2>
+                    <p>This study investigates the challenges and opportunities for the life insurance sector in addressing the needs of an aging global population, focusing on product innovation and long-term care coverage.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">37. The Role of Artificial Intelligence in Predictive Underwriting</h2>
+                    <p>This paper explores how artificial intelligence (AI) is transforming the underwriting process by enabling insurers to predict risk with greater accuracy, leading to more personalized and efficient policies.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">38. The Effect of Catastrophic Events on Insurance Markets</h2>
+                    <p>This research analyzes the effect of catastrophic events, such as natural disasters and pandemics, on the global insurance market, focusing on risk management strategies and policy adaptation.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">39. The Role of Consumer Education in Promoting Insurance Literacy</h2>
+                    <p>This study examines the importance of consumer education in promoting insurance literacy, particularly in underserved communities, and the role of insurers in providing accessible information.</p>
+                  </a>
+                
+                  <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                    <h2 class="font-bold">40. The Impact of Globalization on Cross-Border Insurance Operations</h2>
+                    <p>This paper explores how globalization has affected cross-border insurance operations, including regulatory challenges, market expansion, and international risk management strategies.</p>
+                  </a>
+                
+                                        
+                   
+                  </li>
+                  
+              </ul>
+          </div>
+          
+          
+          <footer class="fixed bottom-4 right-4 bg-blue-500 dark:bg-blue-700 text-white dark:text-white py-2 px-4 rounded-full shadow-md">
+             
+        <!-- <a href="#" class="text-white dark:text-white">WhatsApp <img aria-hidden="true" alt="whatsapp" src="https://placehold.co/20?text=💬" class="inline-block w-4 h-4 ml-2"></a> -->
+
+        <a href="https://wa.me/+2348125984365"> <svg xmlns="http://www.w3.org/2000/svg" width="46" height="36" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+          </svg></a>
+          </footer>
+          
+      </div>
+  </body>
+  </html>
+    </body>
+  </html>
+</body>
+</html>

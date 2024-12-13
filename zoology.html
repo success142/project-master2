@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+          <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+          <script type="text/javascript">
+              window.tailwind.config = {
+                  darkMode: ['class'],
+                  theme: {
+                      extend: {
+                          colors: {
+                              border: 'hsl(var(--border))',
+                              input: 'hsl(var(--input))',
+                              ring: 'hsl(var(--ring))',
+                              background: 'hsl(var(--background))',
+                              foreground: 'hsl(var(--foreground))',
+                              primary: {
+                                  DEFAULT: 'hsl(var(--primary))',
+                                  foreground: 'hsl(var(--primary-foreground))'
+                              },
+                              secondary: {
+                                  DEFAULT: 'hsl(var(--secondary))',
+                                  foreground: 'hsl(var(--secondary-foreground))'
+                              },
+                              destructive: {
+                                  DEFAULT: 'hsl(var(--destructive))',
+                                  foreground: 'hsl(var(--destructive-foreground))'
+                              },
+                              muted: {
+                                  DEFAULT: 'hsl(var(--muted))',
+                                  foreground: 'hsl(var(--muted-foreground))'
+                              },
+                              accent: {
+                                  DEFAULT: 'hsl(var(--accent))',
+                                  foreground: 'hsl(var(--accent-foreground))'
+                              },
+                              popover: {
+                                  DEFAULT: 'hsl(var(--popover))',
+                                  foreground: 'hsl(var(--popover-foreground))'
+                              },
+                              card: {
+                                  DEFAULT: 'hsl(var(--card))',
+                                  foreground: 'hsl(var(--card-foreground))'
+                              },
+                          },
+                      }
+                  }
+              }
+          </script>
+          <style type="text/tailwindcss">
+              @layer base {
+                  :root {
+                      --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 240 5.9% 10%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 240 5.9% 10%;
+  --radius: 0.5rem;
+                  }
+                  .dark {
+                      --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 240 5.9% 10%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+                  }
+              }
+          </style>
+    </head>
+    <body>
+      <!DOCTYPE html>
+  <html lang="en">
+  <body class="bg-white dark:bg-zinc-900 text-black dark:text-white">
+      <div class="flex flex-col min-h-screen">
+          
+          
+          <header class="bg-white dark:bg-zinc-800 shadow-md">
+              <div class="container mx-auto flex items-center justify-between py-4 px-8">
+                  <div class="text-2xl font-bold text-blue-500 dark:text-blue-300">Logo</div>
+                  
+                  <nav class="hidden md:flex space-x-6">
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Home</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Projects</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Departments</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Hire a Writer</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Payments</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Downloads</a>
+                      <div class="relative group">
+                          <a href="#" class="text-zinc-600 dark:text-zinc-400 group-hover:text-blue-500 dark:group-hover:text-blue-300">Make Money</a>
+                          <div class="hidden group-hover:block absolute z-10 mt-2 py-2 bg-white dark:bg-zinc-800 shadow-md rounded-lg">
+                              <a href="#" class="block px-4 py-2 text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Get in Touch</a>
+                          </div>
+                      </div>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Campus Rep</a>
+                      <a href="#" class="text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-300">Blog</a>
+                  </nav>
+                  
+                  <button class="bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">Login</button>
+              </div>
+          </header>
+          
+          
+          <div class="container mx-auto py-8">
+              <input type="text" placeholder="What's your project topic?" class="mt-8 px-4 py-2 border border-zinc-300 dark:border-zinc-600 rounded-lg w-full md:w-1/2">
+              <button class="bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg mt-2">Search <img aria-hidden="true" alt="search" src="https://placehold.co/20?text=🔍" class="inline-block w-4 h-4 ml-2"></button>
+          </div>
+          
+          
+          <div class="container mx-auto">
+              <h1 class="text-3xl font-bold text-blue-500 dark:text-blue-300 mb-4">Accounting Project Topics & Research Materials | Final Year Research Project Topics With Free Chapter One</h1>
+              <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <li>
+                      <a href="#" class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg">
+                        <h2 class="font-bold">1. Assessment of the Impact of International Financial Reporting Standards (IFRS) on Financial Statements</h2>
+                        <p>This study examines the adoption of IFRS and its influence on financial statements, focusing on transparency, comparability, and challenges during implementation.</p>
+                      </a> </li>
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">1. Diversity and Distribution of Amphibians in a Tropical Forest</h2>
+                        <p>This study explores the diversity and habitat preferences of amphibians in a tropical forest. Data collected through surveys and environmental sampling highlights the ecological factors affecting amphibian distribution and conservation strategies for their habitats.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">2. The Impact of Climate Change on Migration Patterns of Birds</h2>
+                        <p>This research investigates how climate change affects the migration patterns of specific bird species. Using tracking and weather data, the study identifies the correlation between climate shifts and alterations in migratory routes.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">3. Role of Pollinators in Agricultural Productivity</h2>
+                        <p>This project assesses the role of pollinating insects in enhancing crop yields. Field observations and experiments evaluate how different pollinator species influence pollination efficiency and overall agricultural productivity.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">4. Behavioral Study of Ant Colonies in Urban Environments</h2>
+                        <p>This research examines the adaptive behavior of ant colonies in urban settings. The study reveals how urbanization impacts ant nesting, foraging, and colony survival.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">5. Effect of Pollution on Aquatic Fauna in Freshwater Ecosystems</h2>
+                        <p>The study analyzes how pollutants affect the biodiversity and health of aquatic fauna in freshwater bodies. Biological indicators are used to assess water quality and the extent of pollution's impact.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">6. Population Genetics of Endangered Mammals</h2>
+                        <p>This project uses genetic markers to study the population structure and diversity of endangered mammals. The findings provide insights into genetic bottlenecks and strategies for species recovery.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">7. Predatory Behavior of Spiders in Agroecosystems</h2>
+                        <p>This study explores the role of spiders in controlling agricultural pests. Field observations highlight their hunting strategies and contribution to pest management.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">8. Ecological Importance of Wetlands for Wildlife Conservation</h2>
+                        <p>This research evaluates the role of wetlands in sustaining biodiversity and supporting wildlife populations. Recommendations are provided for wetland conservation initiatives.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">9. Comparative Analysis of Reproductive Strategies in Lizards</h2>
+                        <p>This project compares the reproductive strategies of oviparous and viviparous lizards, highlighting the evolutionary advantages of each strategy under varying environmental conditions.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">10. Parasites in Wild and Domesticated Fish Populations</h2>
+                        <p>This study examines the prevalence of parasitic infections in fish populations, comparing wild and domesticated fish. The findings shed light on the role of environmental factors in parasite dynamics.</p>
+                      </a>
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">11. Foraging Behavior of Nocturnal Bats</h2>
+                        <p>This research investigates the foraging patterns of nocturnal bats, focusing on their role in pest control and pollination. Acoustic monitoring and dietary analysis are used to understand their ecological importance.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">12. Adaptation Mechanisms of Desert Animals</h2>
+                        <p>This project explores the physiological and behavioral adaptations of animals living in desert environments. The findings illustrate how these adaptations enable survival in extreme conditions.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">13. Role of Coral Reefs in Marine Biodiversity</h2>
+                        <p>This research examines the ecological role of coral reefs in supporting marine life. The study emphasizes the importance of reef conservation for maintaining marine biodiversity.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">14. Comparative Study of Feeding Habits in Carnivorous Mammals</h2>
+                        <p>This project analyzes the feeding habits of various carnivorous mammals, highlighting the ecological roles of predators in maintaining ecosystem balance.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">15. Impact of Habitat Fragmentation on Primate Behavior</h2>
+                        <p>This study investigates how habitat fragmentation affects the behavior and social structure of primate species. The findings provide insights into conservation strategies for fragmented habitats.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">16. Nest-Building Behavior of Weaver Birds</h2>
+                        <p>This project explores the nest-building techniques of weaver birds, focusing on the materials used and the influence of environmental factors on nest construction.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">17. Microplastic Pollution and its Effect on Marine Life</h2>
+                        <p>The research evaluates the ingestion of microplastics by marine organisms and its subsequent effects on their health and survival.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">18. Behavioral Ecology of Predatory Birds</h2>
+                        <p>This project examines the hunting strategies and prey selection of predatory bird species, highlighting their role in ecosystem stability.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">19. Comparative Study of Insect Diversity in Forest and Urban Areas</h2>
+                        <p>This study compares insect diversity in forest and urban environments, identifying factors that contribute to habitat-specific variations in biodiversity.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">20. The Role of Zooplankton in Aquatic Food Webs</h2>
+                        <p>This research investigates the ecological role of zooplankton in freshwater ecosystems and their importance in maintaining food web dynamics.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">21. Mating Strategies of Fiddler Crabs</h2>
+                        <p>This project examines the unique mating strategies of fiddler crabs, focusing on male claw-waving displays and female mate choice.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">22. Impact of Deforestation on Butterfly Populations</h2>
+                        <p>The study assesses the effects of deforestation on butterfly diversity and abundance in tropical forests, providing recommendations for conservation.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">23. Seasonal Variations in Fish Reproductive Cycles</h2>
+                        <p>This research explores how seasonal changes influence the reproductive cycles of freshwater fish species.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">24. Role of Earthworms in Soil Fertility</h2>
+                        <p>This project investigates how earthworms contribute to soil fertility through nutrient cycling and organic matter decomposition.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">25. Bioacoustic Analysis of Frog Calls</h2>
+                        <p>The study analyzes the calls of frog species to understand their communication systems and behavioral patterns.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">26. Prevalence of Ectoparasites in Small Mammals</h2>
+                        <p>This research examines the occurrence of ectoparasites in small mammal populations and their impact on host health.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">27. Impact of Invasive Species on Native Fauna</h2>
+                        <p>The study investigates the effects of invasive species on native animal populations, focusing on competition and habitat alteration.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">28. Thermal Tolerance in Aquatic Ectotherms</h2>
+                        <p>This project explores the thermal tolerance limits of aquatic ectotherms and their implications for survival under changing climate conditions.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">29. Role of Scavengers in Ecosystem Functioning</h2>
+                        <p>This study highlights the ecological importance of scavengers in nutrient recycling and carcass decomposition.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">30. Nocturnal Activity Patterns of Urban Wildlife</h2>
+                        <p>The research examines how urbanization influences the activity patterns of nocturnal animals, focusing on resource use and habitat preferences.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">31. Genetic Diversity in Captive vs. Wild Animal Populations</h2>
+                        <p>This project compares the genetic diversity of captive and wild populations of a selected species, emphasizing conservation implications.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">32. Effect of Agricultural Practices on Amphibian Diversity</h2>
+                        <p>The study evaluates the impact of pesticide use and habitat modification on amphibian populations in agricultural landscapes.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">33. Feeding Habits of Herbivores in Savanna Ecosystems</h2>
+                        <p>This research investigates the dietary preferences of herbivores in savanna regions and their role in vegetation dynamics.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">34. Role of Migratory Birds in Seed Dispersal</h2>
+                        <p>The project examines how migratory birds contribute to seed dispersal and the regeneration of forest ecosystems.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">35. Social Structures in Meerkat Colonies</h2>
+                        <p>This study explores the social hierarchy and cooperative behavior within meerkat colonies in arid environments.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">36. Bioindicators of Water Quality in Wetlands</h2>
+                        <p>This research identifies key species used as bioindicators to assess the health of wetland ecosystems.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">37. Parental Care in Fish: A Behavioral Study</h2>
+                        <p>This project examines the parental care strategies of fish species, focusing on the trade-offs between survival and reproductive investment.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">38. Interaction Between Pollinators and Invasive Plants</h2>
+                        <p>The study investigates how invasive plant species affect native pollinator communities and pollination networks.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">39. Seasonal Activity Patterns of Reptiles in Arid Zones</h2>
+                        <p>This research explores how reptiles in arid regions adapt their activity patterns to seasonal environmental changes.</p>
+                      </a>
+                      
+                      <a class="block bg-blue-500 dark:bg-blue-700 text-white dark:text-white px-4 py-2 rounded-lg" href="#">
+                        <h2 class="font-bold">40. Symbiotic Relationships in Coral Reef Ecosystems</h2>
+                        <p>This project examines the symbiotic relationships between coral species and their associated organisms, emphasizing their ecological significance.</p>
+                      </a>
+                                             
+                  </li>
+                  
+              </ul>
+          </div>
+          
+          
+          <footer class="fixed bottom-4 right-4 bg-blue-500 dark:bg-blue-700 text-white dark:text-white py-2 px-4 rounded-full shadow-md">
+             
+        <!-- <a href="#" class="text-white dark:text-white">WhatsApp <img aria-hidden="true" alt="whatsapp" src="https://placehold.co/20?text=💬" class="inline-block w-4 h-4 ml-2"></a> -->
+
+        <a href="https://wa.me/+2348125984365"> <svg xmlns="http://www.w3.org/2000/svg" width="46" height="36" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+          </svg></a>
+          </footer>
+          
+      </div>
+  </body>
+  </html>
+    </body>
+  </html>
+</body>
+</html>
